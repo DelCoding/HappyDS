@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Happy Deepseek",
+    "description": "当deepseek返回服务器繁忙时，自动点击重试",
+    "icons": {
+        "16": "icons/hds16.png",
+        "48": "icons/hds48.png",
+        "128": "icons/hds128.png"
+      },
+    "version": "1.0",
+    "permissions": ["storage"],
+    "options_page": "",
+    "content_scripts": [
+      {
+        "matches": ["https://chat.deepseek.com/a/chat/s/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
